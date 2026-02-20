@@ -43,9 +43,13 @@
     height: 300px;
   }
 
+  video {
+    width: 210px;
+  }
+
   .juster {
     padding-top: 1rem;
-    width: 300px;
+    width: 180px;
   }
   /*hjemmelavet flimmer i mobil*/
   .waterfall1 {
