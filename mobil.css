@@ -1,0 +1,248 @@
+/*det der ikke skal vises i mobil*/
+#mainbox-wrapper {
+  display: block;
+}
+
+#mobilbox-wrapper {
+  display: none;
+}
+
+@media screen and (max-width: 900px) {
+  #mainbox-wrapper {
+    display: none;
+  }
+
+  #mobilbox-wrapper {
+    display: block;
+  }
+
+  h1 {
+    font-size: 4rem;
+    padding-bottom: 2rem;
+  }
+
+  .mobilbox1 {
+    direction: rtl;
+    padding-right: 3rem;
+    transition: 1s;
+    padding: 2rem;
+    margin-bottom: 8rem;
+  }
+
+  .mobilbox1 video {
+    padding-left: 4rem;
+  }
+
+  .box3 {
+    height: 500px;
+    background-image: linear-gradient(#bcbce1, #6060a4);
+  }
+
+  .box4 {
+    background-image: linear-gradient(#e6e8de, #3f3f8f);
+    height: 300px;
+  }
+
+  .juster {
+    padding-top: 1rem;
+    width: 300px;
+  }
+  /*hjemmelavet flimmer i mobil*/
+  .waterfall1 {
+    background-color: #fff;
+    color: #fff;
+    animation: wf_animation1 0.5s infinite;
+  }
+
+  .waterfall2 {
+    background-color: #b2cfee;
+    color: #b2cfee;
+    animation: wf_animation2 0.6s infinite;
+  }
+
+  .waterfall3 {
+    background-color: #7688de;
+    color: #7688de;
+    animation: wf_animation3 0.4s infinite;
+  }
+
+  .waterfall4 {
+    background-color: #b2c7ee;
+    color: #b2c7ee;
+    animation: wf_animation4 0.5s infinite;
+  }
+
+  .waterfall5 {
+    background-color: #839fd4;
+    color: #839fd4;
+    animation: wf_animation5 0.6s infinite;
+  }
+
+  .waterfall6 {
+    background-color: #5987dc;
+    color: #5987dc;
+    animation: wf_animation6 0.4s infinite;
+  }
+
+  @keyframes wf_animation1 {
+    20% {
+      background-color: #b2cfee;
+      color: #b2cfee;
+    }
+    40% {
+      background-color: #7688de;
+      color: #7688de;
+    }
+    60% {
+      background-color: #b2c7ee;
+      color: #b2c7ee;
+    }
+    70% {
+      background-color: #92bfdd;
+      color: #92bfdd;
+    }
+    80% {
+      background-color: #839fd4;
+      color: #839fd4;
+    }
+    100% {
+      background-color: #5987dc;
+      color: #5987dc;
+    }
+  }
+
+  @keyframes wf_animation2 {
+    20% {
+      background-color: #7688de;
+      color: #7688de;
+    }
+    40% {
+      background-color: #b2c7ee;
+      color: #b2c7ee;
+    }
+    60% {
+      background-color: #92bfdd;
+      color: #92bfdd;
+    }
+    70% {
+      background-color: #839fd4;
+      color: #839fd4;
+    }
+    80% {
+      background-color: #5987dc;
+      color: #5987dc;
+    }
+    100% {
+      background-color: #fff;
+      color: #fff;
+    }
+  }
+
+  @keyframes wf_animation3 {
+    20% {
+      background-color: #b2c7ee;
+      color: #b2c7ee;
+    }
+    40% {
+      background-color: #92bfdd;
+      color: #92bfdd;
+    }
+    60% {
+      background-color: #839fd4;
+      color: #839fd4;
+    }
+    70% {
+      background-color: #5987dc;
+      color: #5987dc;
+    }
+    80% {
+      background-color: #fff;
+      color: #fff;
+    }
+    100% {
+      background-color: #b2cfee;
+      color: #b2cfee;
+    }
+  }
+
+  @keyframes wf_animation4 {
+    20% {
+      background-color: #92bfdd;
+      color: #92bfdd;
+    }
+    40% {
+      background-color: #839fd4;
+      color: #839fd4;
+    }
+    60% {
+      background-color: #5987dc;
+      color: #5987dc;
+    }
+    70% {
+      background-color: #839fd4;
+      color: #839fd4;
+    }
+    80% {
+      background-color: #5987dc;
+      color: #5987dc;
+    }
+    100% {
+      background-color: #fff;
+      color: #fff;
+    }
+  }
+
+  @keyframes wf_animation5 {
+    20% {
+      background-color: #5987dc;
+      color: #5987dc;
+    }
+    40% {
+      background-color: #fff;
+      color: #fff;
+    }
+    60% {
+      background-color: #7688de;
+      color: #7688de;
+    }
+    70% {
+      background-color: #b2c7ee;
+      color: #b2c7ee;
+    }
+    80% {
+      background-color: #92bfdd;
+      color: #92bfdd;
+    }
+    100% {
+      background-color: #839fd4;
+      color: #839fd4;
+    }
+  }
+
+  @keyframes wf_animation6 {
+    20% {
+      background-color: #5987dc;
+      color: #5987dc;
+    }
+    40% {
+      background-color: #fff;
+      color: #fff;
+    }
+    60% {
+      background-color: #7688de;
+      color: #7688de;
+    }
+    70% {
+      background-color: #b2c7ee;
+      color: #b2c7ee;
+    }
+    80% {
+      background-color: #92bfdd;
+      color: #92bfdd;
+    }
+    100% {
+      background-color: #839fd4;
+      color: #839fd4;
+    }
+  }
+}

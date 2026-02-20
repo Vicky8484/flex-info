@@ -1,0 +1,489 @@
+/*************** Reset *********************/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  width: 150px;
+  height: auto;
+  display: block;
+}
+
+/*************************************************/
+html {
+  scrollbar-color: #e6e8de #3f3f8f;
+}
+
+body {
+  background-color: #3f3f8f;
+  font-family: "Gudea", sans-serif;
+  font-style: normal;
+  color: #1b1b57;
+  overflow-x: hidden;
+}
+
+main {
+  background-color: #3f3f8f;
+  padding: 3rem;
+  padding-bottom: 0;
+}
+
+/*FLEX SCROLL overskrift øverst på siden*/
+.title {
+  padding-bottom: 1rem;
+  font-weight: 800;
+  font-size: 5rem;
+  text-decoration: line-through #b8b8e134;
+}
+
+/*hele boxen rundt om flex-boxene*/
+.main-box {
+  display: flex;
+  padding-bottom: 8rem;
+}
+
+/*css for boxe generelt*/
+.box {
+  flex: 1;
+  height: 500px;
+  direction: rtl;
+  padding-right: 3rem;
+  transition: 1s;
+}
+
+.box:hover {
+  flex: 2;
+}
+
+/*tekst og hvordan det displayer før og efter hover*/
+.after {
+  display: none;
+}
+
+.reverse {
+  padding-top: 10rem;
+}
+
+.box .current {
+  padding-top: 10rem;
+  cursor: pointer;
+}
+
+.box:hover .after {
+  display: block;
+  display: flex;
+  width: 300px;
+  cursor: pointer;
+}
+
+.box:hover .after img {
+  width: 200px;
+  cursor: pointer;
+  border: #8f8fca 10px solid;
+}
+
+.box:hover .reverse {
+  display: none;
+  width: 300px;
+  cursor: pointer;
+}
+
+.box .current2 {
+  padding-top: 10rem;
+  cursor: pointer;
+}
+
+.box:hover .current2 {
+  display: none;
+  padding-top: 10rem;
+  cursor: pointer;
+}
+
+/*bare classes der bestemmer boxens baggrundsfarve*/
+.box1 {
+  background-image: linear-gradient(#8f8fca, #3f3f8f);
+}
+
+.box2 {
+  background-image: linear-gradient(#e6e8de, #3f3f8f);
+}
+
+/*image box gap mellem billeder*/
+.image-box {
+  gap: 1rem;
+}
+
+/*mystery boxe med skiftende farver*/
+.box0 {
+  flex: 1;
+  height: 500px;
+  direction: rtl;
+  transition: 1s;
+}
+
+.box0:hover .img {
+  background-image: linear-gradient(#13863a, #3f3f8f);
+  animation: colormix 1s infinite ease-in-out;
+  flex: 1;
+  height: 500px;
+  transition: 1s;
+}
+
+.box0:hover {
+  flex: 2;
+}
+
+.box0 .current2 {
+  padding-top: 10rem;
+}
+
+.box0:hover .current2 {
+  display: none;
+}
+
+.box0 h3 {
+  padding-right: 3rem;
+}
+
+.box0:hover .after {
+  display: block;
+  width: 300px;
+  padding-top: 10rem;
+  cursor: pointer;
+}
+
+.mys:hover .img {
+  animation: colormix2 1s infinite ease-in-out;
+}
+
+@keyframes colormix {
+  25% {
+    background-image: linear-gradient(#138662, #3f3f8f);
+  }
+  50% {
+    background-image: linear-gradient(#138677, #3f3f8f);
+  }
+  75% {
+    background-image: linear-gradient(#136d86, #3f3f8f);
+  }
+  100% {
+    background-image: linear-gradient(#491386, #3f3f8f);
+  }
+}
+
+@keyframes colormix2 {
+  25% {
+    background-image: linear-gradient(#65b39a, #3f3f8f);
+  }
+  50% {
+    background-image: linear-gradient(#ba6b99, #3f3f8f);
+  }
+  75% {
+    background-image: linear-gradient(#b4b56e, #3f3f8f);
+  }
+  100% {
+    background-image: linear-gradient(#bc7070, #3f3f8f);
+  }
+}
+
+/*mystery boxe med skiftende baggrundsbillede*/
+.mysbackground {
+  flex: 1;
+  height: 500px;
+  direction: rtl;
+  transition: 1s;
+}
+
+.mysbackground:hover .img {
+  animation: background 4s infinite;
+  flex: 1;
+  height: 500px;
+  transition: 1s;
+}
+
+.mysbackground:hover {
+  flex: 2;
+}
+
+.mysbackground .current2 {
+  padding-top: 10rem;
+}
+
+.mysbackground:hover .current2 {
+  display: none;
+}
+
+.mysbackground h3 {
+  padding-right: 3rem;
+}
+
+@keyframes background {
+  0% {
+    background-image: url(pic1.png);
+    background-size: cover;
+    opacity: 85%;
+  }
+  25% {
+    background-image: url(pic2.png);
+    background-size: cover;
+    opacity: 85%;
+  }
+  50% {
+    background-image: url(pic3.png);
+    background-size: cover;
+    opacity: 85%;
+  }
+  75% {
+    background-image: url(pic4.png);
+    background-size: cover;
+    opacity: 85%;
+  }
+  100% {
+    background-image: url(pic5.png);
+    background-size: cover;
+    opacity: 85%;
+  }
+}
+
+/*waterfall box*/
+.waterfall-box {
+  flex: 1;
+  height: 500px;
+  direction: rtl;
+  transition: 1s;
+}
+
+.waterfall-box:hover .img {
+  /* animation: background 4s infinite; */
+  flex: 1;
+  height: 500px;
+  transition: 1s;
+}
+
+.waterfall-box:hover {
+  flex: 2;
+}
+
+.waterfall-box .current2 {
+  padding-top: 10rem;
+}
+
+.waterfall-box .current3 {
+  padding-right: 3rem;
+}
+
+.waterfall-box:hover .current3 {
+  display: none;
+}
+
+.waterfall-box:hover .current2 {
+  display: none;
+}
+
+.waterfall-box h3 {
+  padding-right: 3rem;
+}
+
+.waterfall-box:hover .after {
+  display: block;
+}
+
+.waterfall1 {
+  background-color: #fff;
+  color: #fff;
+  animation: wf_animation1 0.5s infinite;
+}
+
+.waterfall2 {
+  background-color: #b2cfee;
+  color: #b2cfee;
+  animation: wf_animation2 0.6s infinite;
+}
+
+.waterfall3 {
+  background-color: #7688de;
+  color: #7688de;
+  animation: wf_animation3 0.4s infinite;
+}
+
+.waterfall4 {
+  background-color: #b2c7ee;
+  color: #b2c7ee;
+  animation: wf_animation4 0.5s infinite;
+}
+
+.waterfall5 {
+  background-color: #839fd4;
+  color: #839fd4;
+  animation: wf_animation5 0.6s infinite;
+}
+
+.waterfall6 {
+  background-color: #5987dc;
+  color: #5987dc;
+  animation: wf_animation6 0.4s infinite;
+}
+
+@keyframes wf_animation1 {
+  20% {
+    background-color: #b2cfee;
+    color: #b2cfee;
+  }
+  40% {
+    background-color: #7688de;
+    color: #7688de;
+  }
+  60% {
+    background-color: #b2c7ee;
+    color: #b2c7ee;
+  }
+  70% {
+    background-color: #92bfdd;
+    color: #92bfdd;
+  }
+  80% {
+    background-color: #839fd4;
+    color: #839fd4;
+  }
+  100% {
+    background-color: #5987dc;
+    color: #5987dc;
+  }
+}
+
+@keyframes wf_animation2 {
+  20% {
+    background-color: #7688de;
+    color: #7688de;
+  }
+  40% {
+    background-color: #b2c7ee;
+    color: #b2c7ee;
+  }
+  60% {
+    background-color: #92bfdd;
+    color: #92bfdd;
+  }
+  70% {
+    background-color: #839fd4;
+    color: #839fd4;
+  }
+  80% {
+    background-color: #5987dc;
+    color: #5987dc;
+  }
+  100% {
+    background-color: #fff;
+    color: #fff;
+  }
+}
+
+@keyframes wf_animation3 {
+  20% {
+    background-color: #b2c7ee;
+    color: #b2c7ee;
+  }
+  40% {
+    background-color: #92bfdd;
+    color: #92bfdd;
+  }
+  60% {
+    background-color: #839fd4;
+    color: #839fd4;
+  }
+  70% {
+    background-color: #5987dc;
+    color: #5987dc;
+  }
+  80% {
+    background-color: #fff;
+    color: #fff;
+  }
+  100% {
+    background-color: #b2cfee;
+    color: #b2cfee;
+  }
+}
+
+@keyframes wf_animation4 {
+  20% {
+    background-color: #92bfdd;
+    color: #92bfdd;
+  }
+  40% {
+    background-color: #839fd4;
+    color: #839fd4;
+  }
+  60% {
+    background-color: #5987dc;
+    color: #5987dc;
+  }
+  70% {
+    background-color: #839fd4;
+    color: #839fd4;
+  }
+  80% {
+    background-color: #5987dc;
+    color: #5987dc;
+  }
+  100% {
+    background-color: #fff;
+    color: #fff;
+  }
+}
+
+@keyframes wf_animation5 {
+  20% {
+    background-color: #5987dc;
+    color: #5987dc;
+  }
+  40% {
+    background-color: #fff;
+    color: #fff;
+  }
+  60% {
+    background-color: #7688de;
+    color: #7688de;
+  }
+  70% {
+    background-color: #b2c7ee;
+    color: #b2c7ee;
+  }
+  80% {
+    background-color: #92bfdd;
+    color: #92bfdd;
+  }
+  100% {
+    background-color: #839fd4;
+    color: #839fd4;
+  }
+}
+
+@keyframes wf_animation6 {
+  20% {
+    background-color: #5987dc;
+    color: #5987dc;
+  }
+  40% {
+    background-color: #fff;
+    color: #fff;
+  }
+  60% {
+    background-color: #7688de;
+    color: #7688de;
+  }
+  70% {
+    background-color: #b2c7ee;
+    color: #b2c7ee;
+  }
+  80% {
+    background-color: #92bfdd;
+    color: #92bfdd;
+  }
+  100% {
+    background-color: #839fd4;
+    color: #839fd4;
+  }
+}
