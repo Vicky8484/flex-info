@@ -221,27 +221,27 @@ main {
 
 @keyframes background {
   0% {
-    background-image: url(pic1.png);
+    background-image: url(pic1.webp);
     background-size: cover;
     opacity: 85%;
   }
   25% {
-    background-image: url(pic2.png);
+    background-image: url(pic2.webp);
     background-size: cover;
     opacity: 85%;
   }
   50% {
-    background-image: url(pic3.png);
+    background-image: url(pic3.webp);
     background-size: cover;
     opacity: 85%;
   }
   75% {
-    background-image: url(pic4.png);
+    background-image: url(pic4.webp);
     background-size: cover;
     opacity: 85%;
   }
   100% {
-    background-image: url(pic5.png);
+    background-image: url(pic5.webp);
     background-size: cover;
     opacity: 85%;
   }
